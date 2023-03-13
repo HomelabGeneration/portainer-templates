@@ -1,0 +1,65 @@
+---
+version: "3"
+
+env:
+  ANSIBLE_CONFIG: "{{.ROOT_DIR}}/ansible.cfg"
+
+vars:
+  ANSIBLE_PLAYBOOK_DIR: "{{.ANSIBLE_DIR}}/playbooks"
+  ANSIBLE_INVENTORY_DIR: "{{.ANSIBLE_DIR}}/inventory"
+
+tasks:
+
+  init:
+    desc: Install / Upgrade Ansible galaxy deps
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible-galaxy collection install -r requirements.yml --collections-path ~/.ansible/collections --force
+
+  list:
+    desc: List all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible all -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml --list-hosts
+
+  update:
+    desc: Update all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible-playbook -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml {{.ANSIBLE_PLAYBOOK_DIR}}/homeserver-update.yml
+
+  prepare:
+    desc: Prepare all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible-playbook -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml {{.ANSIBLE_PLAYBOOK_DIR}}/homeserver-prepare.yml
+
+  install:
+    desc: Install docker on all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible-playbook -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml {{.ANSIBLE_PLAYBOOK_DIR}}/homeserver-install.yml
+
+  ping:
+    desc: Ping all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible all -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml --one-line -m 'ping'
+
+  uptime:
+    desc: Uptime of all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible all -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml --one-line -a 'uptime'
+
+  force-reboot:
+    desc: Reboot all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible-playbook -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml {{.ANSIBLE_PLAYBOOK_DIR}}/homeserver-reboot.yml
+
+  force-poweroff:
+    desc: Shutdown all the hosts
+    dir: "{{.ANSIBLE_DIR}}"
+    cmds:
+      - ansible all -i {{.ANSIBLE_INVENTORY_DIR}}/hosts.yml -a '/usr/bin/systemctl poweroff' --become

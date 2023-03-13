@@ -1,0 +1,150 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Diun",
+      "description": "Diun - Docker Image Update Notifier",
+      "categories": ["Homelab", "Maintenance"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
+        "stackfile": "applications/diun/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "VOLUME_NAME",
+          "label": "Volume name",
+          "default": "diun_data"
+        },
+        {
+          "name": "CRON_SCHEDULE",
+          "label": "Cron schedule",
+          "default": "0 */6 * * *"
+        },
+        {
+          "name": "NOTIF_WEBHOOK_ENDPOINT",
+          "label": "Notification webhook endpoint"
+        },
+        {
+          "name": "NOTIF_WEBHOOK_METHOD",
+          "label": "Notification webhook method",
+          "select": [
+            {
+              "text": "POST",
+              "value": "POST",
+              "default": true
+            },
+            {
+              "text": "GET",
+              "value": "GET"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Cloudflared",
+      "description": "Cloudflared tunnel application",
+      "categories": ["Homelab", "Tooling"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
+        "stackfile": "applications/cloudflared/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TOKEN",
+          "label": "Token"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Heimdall",
+      "description": "Heimdall is an elegant solution to organise all your web applications. It’s dedicated to this purpose so you won’t lose your links in a sea of bookmarks.",
+      "categories": ["Homelab", "Tunneling"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
+        "stackfile": "applications/heimdall/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "HTTP_PORT",
+          "label": "HTTP port"
+        },
+        {
+          "name": "HTTPS_PORT",
+          "label": "HTTPS port"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "description": "for UserID"
+        },
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "description": "for GroupID"
+        },
+        {
+          "name": "VOLUME_NAME",
+          "label": "Volume name",
+          "description": "Volume name for config data",
+          "default": "heimdall_config"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Dozzle",
+      "description": "Dozzle is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only.",
+      "categories": ["Homelab", "Maintenance"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
+        "stackfile": "applications/dozzle/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "HTTP_PORT",
+          "label": "HTTP port",
+          "default": "9999"
+        },
+        {
+          "name": "DOZZLE_USERNAME",
+          "label": "Username"
+        },
+        {
+          "name": "DOZZLE_PASSWORD",
+          "label": "Password"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Openspeedtest",
+      "description": "SpeedTest by OpenSpeedTest™ - Free & Open-Source HTML5 Network Performance Estimation Tool. ",
+      "categories": ["Homelab", "Tooling"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
+        "stackfile": "applications/openspeedtest/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "HTTP_PORT",
+          "label": "HTTP port",
+          "default": "3000"
+        },
+        {
+          "name": "HTTPS_PORT",
+          "label": "HTTPS port",
+          "default": "3001"
+        }
+      ]
+    }
+  ]
+}
