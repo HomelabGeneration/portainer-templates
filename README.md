@@ -88,7 +88,7 @@ It is advisable to install [pre-commit](https://pre-commit.com/) and the pre-com
 
 📍 Here we will be running a Ansible Playbook to prepare Ubuntu Server for running docker.
 
-1. Ensure you are able to SSH into your nodes from your workstation using a private SSH key **without a passphrase**. This is how Ansible is able to connect to your remote nodes.
+1. Add hosts to file .ansible/inventory/hosts.yml. Ensure you are able to SSH into your nodes from your workstation using a private SSH key **without a passphrase**. This is how Ansible is able to connect to your remote nodes.
 
    [How to configure SSH key-based authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
