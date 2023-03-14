@@ -7,7 +7,7 @@ Holding portainer customizations like a custom list of application templates.
 By using the following startup options you can use the customizations provided by the repository.
 
 ```
-docker run -d \
+sudo docker run -d \
  -p 9443:9443 \
  --name portainer \
  -v portainer_data:/data \
