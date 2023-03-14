@@ -8,8 +8,8 @@
       "categories": ["Homelab", "Maintenance"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
-        "stackfile": "applications/diun/docker-compose.yml"
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/diun/docker-compose.yml"
       },
       "env": [
         {
@@ -50,8 +50,8 @@
       "categories": ["Homelab", "Tooling"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
-        "stackfile": "applications/cloudflared/docker-compose.yml"
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/cloudflared/docker-compose.yml"
       },
       "env": [
         {
@@ -67,8 +67,8 @@
       "categories": ["Homelab", "Tunneling"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
-        "stackfile": "applications/heimdall/docker-compose.yml"
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/heimdall/docker-compose.yml"
       },
       "env": [
         {
@@ -104,8 +104,8 @@
       "categories": ["Homelab", "Maintenance"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
-        "stackfile": "applications/dozzle/docker-compose.yml"
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/dozzle/docker-compose.yml"
       },
       "env": [
         {
@@ -130,8 +130,8 @@
       "categories": ["Homelab", "Tooling"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/HomelabGeneration/docker-applications-third-party",
-        "stackfile": "applications/openspeedtest/docker-compose.yml"
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/openspeedtest/docker-compose.yml"
       },
       "env": [
         {
