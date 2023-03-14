@@ -9,11 +9,11 @@ By using the following startup options you can use the customizations provided b
 ```
 docker run -d \
  -p 9443:9443 \
- --http-disabled \
  --name portainer \
  -v portainer_data:/data \
  -v /var/run/docker.sock:/var/run/docker.sock \
+ portainer/portainer-ee:latest \
  --templates https://homelabgeneration.github.io/home-stacks/portainer/customizations/templates.json \
- --logo https://homelabgeneration.github.io/home-stacks/portainer/customizationss/portainer_logo.png \
- portainer/portainer-ee:latest
+ --logo https://homelabgeneration.github.io/home-stacks/portainer/customizations/portainer_logo.png \
+ --http-disabled
 ```
