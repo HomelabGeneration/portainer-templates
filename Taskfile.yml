@@ -4,11 +4,6 @@ version: "3"
 vars:
   ANSIBLE_DIR: "{{.ROOT_DIR}}/ansible"
 
-dotenv: [".config.env"]
-
-env:
-  KUBECONFIG: "{{.ROOT_DIR}}/kubeconfig"
-
 includes:
   ansible: .taskfiles/AnsibleTasks.yml
   precommit: .taskfiles/PrecommitTasks.yml
@@ -30,5 +25,4 @@ tasks:
         direnv
         go-task/tap/go-task
         pre-commit
-        prettier
         yamllint

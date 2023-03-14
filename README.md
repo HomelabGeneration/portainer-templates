@@ -32,7 +32,7 @@ For provisioning the following tools will be used:
 
 ## 📂 Repository structure
 
-The Git repository contains the following directories under `stacks` for usage with [Portainer](https://www.portainer.io/).
+The Git repository contains the following directories under `portainer` for usage with [Portainer](https://www.portainer.io/).
 
 ```sh
 📁 portainer              # Portainer files
