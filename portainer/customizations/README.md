@@ -13,7 +13,7 @@ sudo docker run -d \
  -v portainer_data:/data \
  -v /var/run/docker.sock:/var/run/docker.sock \
  portainer/portainer-ee:latest \
- --templates https://homelabgeneration.github.io/home-stacks/portainer/customizations/templates.json \
- --logo https://homelabgeneration.github.io/home-stacks/portainer/customizations/portainer_logo.png \
+ --templates https://github.com/HomelabGeneration/home-stacks/raw/main/portainer/customizations/templates.json \
+ --logo https://github.com/HomelabGeneration/home-stacks/raw/main/portainer/customizations/portainer_logo.png \
  --http-disabled
 ```
