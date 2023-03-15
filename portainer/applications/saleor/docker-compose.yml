@@ -26,7 +26,7 @@ services:
       - "DEFAULT_CHANNEL_SLUG=${DEFAULT_CHANNEL_SLUG}"
       - "JAEGER_AGENT_HOST=jaeger"
       - "DASHBOARD_URL=http://${SERVER_IP}:${DASHBOARD_PORT}"
-      - "ALLOWED_HOSTS=localhost,api"
+      - "ALLOWED_HOSTS=192.168.178.110,localhost,api"
 
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:3.12.1
@@ -43,7 +43,7 @@ services:
       - saleor-backend-tier
     volumes:
       - saleor-db:/var/lib/postgresql/data
-      # - ./replica_user.sql:/docker-entrypoint-initdb.d/replica_user.sql
+      - ./replica_user.sql:/docker-entrypoint-initdb.d/replica_user.sql
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
