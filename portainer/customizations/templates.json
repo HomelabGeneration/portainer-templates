@@ -145,6 +145,69 @@
           "default": "3001"
         }
       ]
+    },
+    {
+      "type": 3,
+      "title": "Saleor Platform",
+      "description": "Saleor Platform is the easiest way to start local development with all the major Saleor services.",
+      "categories": ["Homelab", "Ecommerce"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/saleor/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATABASE_URL",
+          "label": "Database url",
+          "default": "postgres://saleor:saleor@db/saleor"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "label": "Postgres user",
+          "default": "saleor"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "Postgres password",
+          "default": "saleor"
+        },
+        {
+          "name": "DEFAULT_FROM_EMAIL",
+          "label": "Default from email",
+          "default": "noreply@homeserver.com"
+        },
+        {
+          "name": "CELERY_BROKER_URL",
+          "label": "Celery broker url",
+          "default": "redis://redis:6379/1"
+        },
+        {
+          "name": "SECRET_KEY",
+          "label": "Secret key",
+          "default": "changeme"
+        },
+        {
+          "name": "DEFAULT_CHANNEL_SLUG",
+          "label": "Default channel slug",
+          "default": "default-channel"
+        },
+        {
+          "name": "SERVER_IP",
+          "label": "Server ip",
+          "default": "192.168.178.110"
+        },
+        {
+          "name": "DASHBOARD_PORT",
+          "label": "Dashboard port",
+          "default": "9000"
+        },
+        {
+          "name": "API_PORT",
+          "label": "API port",
+          "default": "8000"
+        }
+      ]
     }
   ]
 }
