@@ -45,6 +45,17 @@
     },
     {
       "type": 3,
+      "title": "sistrix-api-python",
+      "description": "Auswertung einer Liste von Mitbewerbern und Keywords und Vergleich der Rankings in eine Excel Tabelle",
+      "categories": ["Homelab", "Communiacs"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/sistrix-api-pythin/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "Cloudflared",
       "description": "Cloudflared tunnel application",
       "categories": ["Homelab", "Tooling"],

@@ -10,6 +10,7 @@ By using the following startup options you can use the customizations provided b
 sudo docker run -d \
  -p 9443:9443 \
  --name portainer \
+ --restart unless-stopped \
  -v portainer_data:/data \
  -v /var/run/docker.sock:/var/run/docker.sock \
  portainer/portainer-ee:latest \

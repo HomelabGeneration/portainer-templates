@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  dozzle:
+    image: ghcr.io/wlwwt/sistrix-api-python:latest
+    container_name: sistrix-api-python
+    restart: unless-stopped
