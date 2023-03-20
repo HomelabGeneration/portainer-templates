@@ -51,7 +51,7 @@
       "platform": "linux",
       "repository": {
         "url": "https://github.com/HomelabGeneration/home-stacks",
-        "stackfile": "portainer/applications/sistrix-api-pythin/docker-compose.yml"
+        "stackfile": "portainer/applications/sistrix-api-python/docker-compose.yml"
       }
     },
     {
