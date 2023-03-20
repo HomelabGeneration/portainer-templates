@@ -46,7 +46,7 @@
     {
       "type": 3,
       "title": "sistrix-api-python",
-      "description": "Auswertung einer Liste von Mitbewerbern und Keywords und Vergleich der Rankings in eine Excel Tabelle",
+      "description": "Evaluation of a list of competitors and keywords and comparison of the rankings in an excel spreadsheet.",
       "categories": ["Homelab", "Communiacs"],
       "platform": "linux",
       "repository": {
