@@ -56,6 +56,17 @@
     },
     {
       "type": 3,
+      "title": "binance-api-python",
+      "description": "Crypto trading Autobot.",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/home-stacks",
+        "stackfile": "portainer/applications/binance-api-python/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "Cloudflared",
       "description": "Cloudflared tunnel application",
       "categories": ["Homelab", "Tooling"],

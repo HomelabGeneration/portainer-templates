@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  binance-api-python:
+    image: ghcr.io/wlwwt/binance-api-python:latest
+    container_name: binance-api-python
+    restart: unless-stopped
