@@ -49,7 +49,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
   redis:
-    image: library/redis:5.0-alpine
+    image: library/redis:7.2-alpine
     ports:
       - 6379:6379
     restart: unless-stopped
