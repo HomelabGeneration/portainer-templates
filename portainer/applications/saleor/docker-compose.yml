@@ -3,7 +3,7 @@ version: "3.4"
 
 services:
   api:
-    image: ghcr.io/saleor/saleor:3.12.3
+    image: ghcr.io/saleor/saleor:3.19.15
     ports:
       - ${API_PORT}:8000
     restart: unless-stopped
@@ -59,7 +59,7 @@ services:
       - saleor-redis:/data
 
   worker:
-    image: ghcr.io/saleor/saleor:3.12.3
+    image: ghcr.io/saleor/saleor:3.19.15
     command: celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info -B
     restart: unless-stopped
     networks:
