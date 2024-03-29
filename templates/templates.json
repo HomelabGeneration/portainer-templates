@@ -127,7 +127,7 @@
         "80:80/tcp",
         "443:443/tcp",
         "853:853/tcp",
-        "3000:3000/tcp"
+        "${HTTP_PORT}:3000/tcp"
       ],
       "restart_policy": "unless-stopped",
       "title": "Adguard",
