@@ -6,7 +6,7 @@ A compiled list ready to go Portainer App templates
 
 1. Log into your Portainer web UI
 2. Under <ins>Settings</ins> --> <ins>App Templates</ins>, update the URL to
-   `https://raw.githubusercontent.com/HomelabGeneration/portainer-templates/main/templates/templates.json`
+   - `https://raw.githubusercontent.com/HomelabGeneration/portainer-templates/main/templates/templates.json`
 3. Now under <ins>Home</ins> --> <ins>App Templates</ins>, you should see all apps. Click one to deploy.
 
 <details>
@@ -29,3 +29,6 @@ sudo docker run -d \
  --logo https://raw.githubusercontent.com/HomelabGeneration/portainer-templates/main/templates/portainer_logo.png \
  --http-disabled
 ```
+
+## Further Templates
+- `https://github.com/Lissy93/portainer-templates`
