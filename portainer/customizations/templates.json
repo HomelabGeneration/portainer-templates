@@ -92,6 +92,10 @@
           "name": "HTTP_PORT",
           "label": "HTTP port",
           "default": "9999"
+        },
+        {
+          "name": "DOZZLE_DATA_PATH",
+          "label": "Data path (e.g. for users.yml)"
         }
       ]
     },
