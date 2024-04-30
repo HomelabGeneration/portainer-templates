@@ -6,3 +6,21 @@ services:
     image: ghcr.io/wlwwt/seo-producer-python:latest
     container_name: seo-producer-python
     restart: unless-stopped
+    networks:
+      - postgres-db-network
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-db-network
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=wolfgang
+      - POSTGRES_DB=seo-producer-python
+
+networks:
+    postgres-db-network:
+        driver: bridge
