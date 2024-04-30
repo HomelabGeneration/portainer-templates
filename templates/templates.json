@@ -3,6 +3,17 @@
   "templates": [
     {
       "type": 3,
+      "title": "seo-producer-python",
+      "description": "seo-producer-python",
+      "categories": ["Homelab", "Communiacs"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/seo-producer-python/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "sistrix-api-python",
       "description": "Evaluation of a list of competitors and keywords and comparison of the rankings in an excel spreadsheet.",
       "categories": ["Homelab", "Communiacs"],
