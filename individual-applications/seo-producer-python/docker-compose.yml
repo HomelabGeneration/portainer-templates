@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  seo-producer-python:
+    image: ghcr.io/wlwwt/seo-producer-python:latest
+    container_name: seo-producer-python
+    restart: unless-stopped
