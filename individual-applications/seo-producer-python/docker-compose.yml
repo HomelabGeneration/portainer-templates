@@ -6,3 +6,5 @@ services:
     image: ghcr.io/wlwwt/seo-producer-python:latest
     container_name: seo-producer-python
     restart: unless-stopped
+    environment:
+      - "GOOGLE_APPLICATION_CREDENTIALS=/code/keys/application_default_credentials.json"
