@@ -1,0 +1,10 @@
+---
+version: "3"
+
+services:
+  seo-producer-python:
+    image: ghcr.io/wlwwt/wealthblog-producer-python:latest
+    container_name: wealthblog-producer-python
+    restart: unless-stopped
+    environment:
+      - "GOOGLE_APPLICATION_CREDENTIALS=/code/keys/application_default_credentials.json"

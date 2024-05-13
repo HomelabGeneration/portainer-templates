@@ -3,6 +3,17 @@
   "templates": [
     {
       "type": 3,
+      "title": "wealthblog-producer-python",
+      "description": "wealthblog-producer-python",
+      "categories": ["Homelab", "Communiacs"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/wealthblog-producer-python/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "seo-producer-python",
       "description": "seo-producer-python",
       "categories": ["Homelab", "Communiacs"],
