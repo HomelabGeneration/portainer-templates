@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  blog-producer-python-health:
+    image: ghcr.io/wlwwt/blog-producer-python-health:latest
+    container_name: blog-producer-python-health
+    restart: unless-stopped
