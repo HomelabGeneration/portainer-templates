@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  blog-producer-python-wealth:
+    image: ghcr.io/wlwwt/blog-producer-python-wealth:latest
+    container_name: blog-producer-python-wealth
+    restart: unless-stopped
