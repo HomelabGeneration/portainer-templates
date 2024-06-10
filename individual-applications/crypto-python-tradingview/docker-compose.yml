@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  crypto-python-main:
+    image: ghcr.io/wlwwt/crypto-python-main:latest
+    container_name: crypto-python-main
+    restart: unless-stopped

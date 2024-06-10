@@ -3,6 +3,17 @@
   "templates": [
     {
       "type": 3,
+      "title": "crypto-python-tradingview",
+      "description": "crypto-python-tradingview",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/crypto-python-tradingview/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "blog-producer-python-health",
       "description": "blog-producer-python-health",
       "categories": ["Homelab"],
