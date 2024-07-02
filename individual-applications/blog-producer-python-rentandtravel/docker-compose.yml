@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  blog-producer-python-rentandtravel:
+    image: ghcr.io/wlwwt/blog-producer-python-rentandtravel:latest
+    container_name: blog-producer-python-rentandtravel
+    restart: unless-stopped
