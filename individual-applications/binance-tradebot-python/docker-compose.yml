@@ -1,0 +1,8 @@
+---
+version: "3"
+
+services:
+  binance-tradebot-python:
+    image: ghcr.io/wlwwt/binance-tradebot-python-main:latest
+    container_name: binance-tradebot-python-main
+    restart: unless-stopped

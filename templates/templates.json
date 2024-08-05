@@ -14,6 +14,17 @@
     },
     {
       "type": 3,
+      "title": "binance-tradebot-python",
+      "description": "binance-tradebot-python",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/binance-tradebot-python/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "blog-producer-python-rentandtravel",
       "description": "blog-producer-python-rentandtravel",
       "categories": ["Homelab"],
