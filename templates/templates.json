@@ -3,6 +3,17 @@
   "templates": [
     {
       "type": 3,
+      "title": "n8n",
+      "description": "n8n allows you to build flexible workflows focused on deep data integration.",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/n8n/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "crypto-python-tradingview",
       "description": "crypto-python-tradingview",
       "categories": ["Homelab"],
