@@ -14,6 +14,17 @@
     },
     {
       "type": 3,
+      "title": "linkedin-api-python",
+      "description": "linkedin-api-python",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/linkedin-api-python/docker-compose.yml"
+      }
+    },
+    {
+      "type": 3,
       "title": "crypto-python-tradingview",
       "description": "crypto-python-tradingview",
       "categories": ["Homelab"],

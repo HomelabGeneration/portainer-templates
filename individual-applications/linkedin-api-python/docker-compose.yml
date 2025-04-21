@@ -1,0 +1,5 @@
+services:
+  linkedin-api-python:
+    image: ghcr.io/wlwwt/linkedin-api-python-main:latest
+    container_name: linkedin-api-python
+    restart: unless-stopped
