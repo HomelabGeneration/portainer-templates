@@ -1,0 +1,7 @@
+services:
+  wlwwt-api-strapi:
+    image: ghcr.io/wlwwt/wlwwt-api-strapi-main:latest
+    container_name: wlwwt-api-strapi-main
+    restart: unless-stopped
+    ports:
+      - "1337:1337"

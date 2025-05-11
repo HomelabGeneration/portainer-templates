@@ -2,17 +2,31 @@
   "version": "3",
   "templates": [
     {
-      "id": 1,
+      "id": 2,
       "type": 3,
-      "name": "linkedin-api-python",
-      "title": "linkedin-api-python",
-      "description": "linkedin-api-python",
+      "name": "binance-tradebot-python",
+      "title": "binance-tradebot-python",
+      "description": "binance-tradebot-python",
       "categories": [
         "Homelab"
       ],
       "repository": {
         "url": "https://github.com/HomelabGeneration/portainer-templates",
-        "stackfile": "individual-applications/linkedin-api-python/docker-compose.yml"
+        "stackfile": "individual-applications/binance-tradebot-python/docker-compose.yml"
+      }
+    },
+    {
+      "id": 2,
+      "type": 3,
+      "name": "wlwwt-api-strapi",
+      "title": "wlwwt-api-strapi",
+      "description": "wlwwt-api-strapi",
+      "categories": [
+        "Homelab"
+      ],
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/wlwwt-api-strapi/docker-compose.yml"
       }
     }
   ]
