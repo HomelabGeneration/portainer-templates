@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 2,
+      "id": 1,
       "type": 3,
       "name": "binance-tradebot-python",
       "title": "binance-tradebot-python",
