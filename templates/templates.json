@@ -28,6 +28,20 @@
         "url": "https://github.com/HomelabGeneration/portainer-templates",
         "stackfile": "individual-applications/wlwwt-api-strapi/docker-compose.yml"
       }
+    },
+    {
+      "id": 3,
+      "type": 3,
+      "name": "sistrix-api-python",
+      "title": "sistrix-api-python",
+      "description": "sistrix-api-python",
+      "categories": [
+        "Homelab"
+      ],
+      "repository": {
+        "url": "https://github.com/HomelabGeneration/portainer-templates",
+        "stackfile": "individual-applications/sistrix-api-python/docker-compose.yml"
+      }
     }
   ]
 }
