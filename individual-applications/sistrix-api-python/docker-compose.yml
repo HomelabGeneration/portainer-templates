@@ -6,3 +6,4 @@ services:
     image: ghcr.io/wlwwt/sistrix-api-python:latest
     container_name: sistrix-api-python
     restart: unless-stopped
+    entrypoint: ["uv", "run", "python", "start.py"]
